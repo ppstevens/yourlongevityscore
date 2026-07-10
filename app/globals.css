@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+.score-circle {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  background: conic-gradient(#22c55e var(--score), #e5e7eb 0);
+}
+
+.score-circle:hover {
+  transform: scale(1.04);
+}
+
+input[type="range"] {
+  accent-color: #10b981;
+}
