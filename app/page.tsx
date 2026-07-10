@@ -63,8 +63,8 @@ export default function LongevityDashboard() {
 <div className="text-center mb-16">
   <div className="flex justify-center mb-6">
     <Image
-      src="https://via.placeholder.com/400x200" 
-      alt="Test" 
+      src="/logo.png"
+      alt="Your Longevity Score"
       width={400}
       height={200}
       className="h-32 md:h-40 w-auto"
