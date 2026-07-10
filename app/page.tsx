@@ -62,12 +62,13 @@ export default function LongevityDashboard() {
         {/* Updated Header with Logo */}
 <div className="text-center mb-16">
   <div className="flex justify-center mb-6">
-    <Image 
+    <Image
       src="/logo.png" 
       alt="Your Longevity Score" 
       width={400}
       height={200}
       className="h-32 md:h-40 w-auto"
+      priority
     />
   </div>
   
