@@ -63,7 +63,7 @@ export default function LongevityDashboard() {
 <div className="text-center mb-16">
   <div className="flex justify-center mb-6">
     <Image
-      src="/logo.png"
+      src="/logo.jpg"
       alt="Your Longevity Score"
       width={400}
       height={200}
@@ -139,7 +139,7 @@ export default function LongevityDashboard() {
   </div>
 
   <button type="submit" disabled={loading} className="w-full py-8 text-2xl font-semibold bg-linear-to-r from-green-600 to-emerald-600 text-white rounded-3xl hover:brightness-110 transition">
-    {loading ? "Analyzing..." : "Calculate My Longevity Score"}
+    {loading ? "Analyzing..." : "Calculate Your Longevity Score"}
   </button>
 </form>
           </div>
@@ -153,7 +153,7 @@ export default function LongevityDashboard() {
         <div className="score-circle w-full h-full rounded-full flex items-center justify-center border-20 border-green-100 shadow-2xl" style={{ '--score': `${result.score}%` } as any}>
           <div className="text-center">
             <div className="text-7xl font-bold text-green-600">{result.score}</div>
-            <p className="uppercase tracking-widest text-xs mt-2 text-gray-500">LONGEVITY SCORE</p>
+            <p className="uppercase tracking-widest text-xs mt-2 text-gray-500">YOUR LONGEVITY SCORE</p>
           </div>
         </div>
       </div>
