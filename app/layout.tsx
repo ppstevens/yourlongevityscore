@@ -24,10 +24,13 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+      lang="en">
+      <head>
+        {/* Google AdSense Script */}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3402607606226196"
+          crossOrigin="anonymous"></script>
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
