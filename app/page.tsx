@@ -139,7 +139,7 @@ export default function LongevityDashboard() {
   </div>
 
   <button type="submit" disabled={loading} className="w-full py-6 text-xl font-semibold bg-linear-to-r from-green-600 to-emerald-600 text-white rounded-3xl hover:brightness-110 transition">
-    {loading ? "Analyzing..." : "Calculate My Longevity Score"}
+    {loading ? "Analyzing..." : "Calculate Your Longevity Score"}
   </button>
 </form>
           </div>
