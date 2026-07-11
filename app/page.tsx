@@ -94,31 +94,31 @@ export default function LongevityDashboard() {
 
         {!result ? (
           <div className="bg-white rounded-3xl shadow-2xl p-16">
-            <form onSubmit={handleSubmit} className="space-y-14">
+            <form onSubmit={handleSubmit} className="space-y-8">
   <div>
-    <label className="block text-2xl font-medium mb-6">Your Age</label>
-    <input type="number" value={formData.age} onChange={(e) => setFormData({ ...formData, age: +e.target.value })} className="w-full text-5xl md:text-7xl font-light text-center py-8 md:py-10 border border-gray-200 rounded-3xl focus:border-green-500 focus:ring-4 focus:ring-green-100" min="18" max="100" />
+    <label className="block text-lg font-medium mb-3">Your Age</label>
+    <input type="number" value={formData.age} onChange={(e) => setFormData({ ...formData, age: +e.target.value })} className="w-full text-4xl font-light text-center py-5 border border-gray-200 rounded-3xl focus:border-green-500 focus:ring-4 focus:ring-green-100" min="18" max="100" />
   </div>
 
   <div>
-    <label className="block text-2xl font-medium mb-6">Sleep per Night</label>
-    <div className="flex items-center gap-6 md:gap-10 bg-gray-50 rounded-3xl p-8 md:p-12">
+    <label className="block text-lg font-medium mb-3">Sleep per Night</label>
+    <div className="flex items-center gap-4 bg-gray-50 rounded-3xl p-6">
       <input type="range" min="4" max="10" step="0.5" value={formData.sleepHours} onChange={(e) => setFormData({ ...formData, sleepHours: +e.target.value })} className="flex-1 accent-green-600" />
-      <span className="text-5xl md:text-7xl font-semibold w-20 md:w-32 text-right">{formData.sleepHours}h</span>
+      <span className="text-4xl font-semibold w-20">{formData.sleepHours}h</span>
     </div>
   </div>
 
   <div>
-    <label className="block text-2xl font-medium mb-6">Exercise Days per Week</label>
-    <div className="flex items-center gap-6 md:gap-10 bg-gray-50 rounded-3xl p-8 md:p-12">
+    <label className="block text-lg font-medium mb-3">Exercise Days per Week</label>
+    <div className="flex items-center gap-4 bg-gray-50 rounded-3xl p-6">
       <input type="range" min="0" max="7" value={formData.exerciseDays} onChange={(e) => setFormData({ ...formData, exerciseDays: +e.target.value })} className="flex-1 accent-green-600" />
-      <span className="text-5xl md:text-7xl font-semibold w-20 md:w-32 text-right">{formData.exerciseDays}</span>
+      <span className="text-4xl font-semibold w-20">{formData.exerciseDays}</span>
     </div>
   </div>
 
   <div>
-    <label className="block text-2xl font-medium mb-6">Nutrition Style</label>
-    <select value={formData.nutritionQuality} onChange={(e) => setFormData({ ...formData, nutritionQuality: e.target.value })} className="w-full text-xl md:text-2xl py-6 md:py-8 px-6 md:px-8 border border-gray-200 rounded-3xl focus:border-green-500 focus:ring-4 focus:ring-green-100">
+    <label className="block text-lg font-medium mb-3">Nutrition Style</label>
+    <select value={formData.nutritionQuality} onChange={(e) => setFormData({ ...formData, nutritionQuality: e.target.value })} className="w-full text-lg py-5 px-6 border border-gray-200 rounded-3xl focus:border-green-500 focus:ring-4 focus:ring-green-100">
       <option value="high protein">High Protein</option>
       <option value="balanced">Balanced</option>
       <option value="high carb">High Carb</option>
@@ -127,19 +127,19 @@ export default function LongevityDashboard() {
     </select>
   </div>
 
-  <div className="grid md:grid-cols-2 gap-8">
+  <div className="grid md:grid-cols-2 gap-6">
     <div>
-      <label className="block text-xl font-medium mb-4">Estimated VO2 Max</label>
-      <input type="number" value={formData.vo2Max} onChange={(e) => setFormData({ ...formData, vo2Max: +e.target.value })} className="w-full text-4xl md:text-5xl font-light text-center py-6 md:py-8 border border-gray-200 rounded-3xl" />
+      <label className="block text-base font-medium mb-3">Estimated VO2 Max</label>
+      <input type="number" value={formData.vo2Max} onChange={(e) => setFormData({ ...formData, vo2Max: +e.target.value })} className="w-full text-3xl font-light text-center py-5 border border-gray-200 rounded-3xl" />
     </div>
     <div>
-      <label className="block text-xl font-medium mb-4">Resting Heart Rate (bpm)</label>
-      <input type="number" value={formData.restingHR} onChange={(e) => setFormData({ ...formData, restingHR: +e.target.value })} className="w-full text-4xl md:text-5xl font-light text-center py-6 md:py-8 border border-gray-200 rounded-3xl" />
+      <label className="block text-base font-medium mb-3">Resting Heart Rate (bpm)</label>
+      <input type="number" value={formData.restingHR} onChange={(e) => setFormData({ ...formData, restingHR: +e.target.value })} className="w-full text-3xl font-light text-center py-5 border border-gray-200 rounded-3xl" />
     </div>
   </div>
 
-  <button type="submit" disabled={loading} className="w-full py-8 text-2xl font-semibold bg-linear-to-r from-green-600 to-emerald-600 text-white rounded-3xl hover:brightness-110 transition">
-    {loading ? "Analyzing..." : "Calculate Your Longevity Score"}
+  <button type="submit" disabled={loading} className="w-full py-6 text-xl font-semibold bg-linear-to-r from-green-600 to-emerald-600 text-white rounded-3xl hover:brightness-110 transition">
+    {loading ? "Analyzing..." : "Calculate My Longevity Score"}
   </button>
 </form>
           </div>
