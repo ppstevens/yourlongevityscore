@@ -59,25 +59,25 @@ export default function LongevityDashboard() {
   return (
     <div className="min-h-screen bg-linear-to-br from-slate-50 via-white to-emerald-50 py-16 px-6">
       <div className="max-w-5xl mx-auto">
-        {/* Updated Header with Logo */}
+        {/* Updated Larger Header */}
 <div className="text-center mb-16">
-  <div className="flex justify-center mb-6">
-    <Image
-      src="/logo.jpg"
+  <div className="flex justify-center mb-8">
+    <img 
+      src="/logo.jpg" 
       alt="Your Longevity Score"
-      width={400}
-      height={200}
-      className="h-32 md:h-40 w-auto"
-      priority
+      width="500"
+      height="250" 
+      className="h-48 md:h56 lg:h-64 w-auto"
     />
   </div>
   
-  <p className="text-2xl text-gray-600">Know Your Score. Extend Your Life.</p>
-  <p className="text-lg text-gray-500 mt-4 max-w-2xl mx-auto">
-    Discover your biological age and get personalized recommendations to optimize longevity, performance, wellness, and healthspan.
+  <p className="text-3xl md:text-4xl text-gray-600 font-medium">Know Your Score. Extend Your Life.</p>
+  
+  <p className="text-xl md:text-2xl text-gray-500 mt-6 max-w-3xl mx-auto leading-relaxed">
+    Discover your biological age and get personalized recommendations to optimize longevity, performance, and healthspan using science-backed metrics.
   </p>
   
-  <div className="flex flex-wrap gap-4 justify-center mt-10">
+  <div className="flex flex-wrap gap-4 justify-center mt-12">
     <a href="/vo2-estimator" className="inline-block px-8 py-4 bg-white border border-green-200 hover:border-green-600 rounded-2xl text-green-700 font-medium hover:bg-green-50 transition">
       📈 VO2 Max Estimator
     </a>
