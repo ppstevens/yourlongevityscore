@@ -77,14 +77,14 @@ export default function LongevityDashboard() {
     Discover your biological age and get personalized recommendations to optimize longevity, performance, and healthspan using science-backed metrics.
   </p>
   
-  <div className="flex flex-wrap gap-4 justify-center mt-12">
-    <a href="/vo2-estimator" className="inline-block px-8 py-4 bg-white border border-green-200 hover:border-green-600 rounded-2xl text-green-700 font-medium hover:bg-green-50 transition">
-      📈 VO2 Max Estimator
-    </a>
-    <a href="/market" className="inline-block px-8 py-4 bg-white border border-amber-200 hover:border-amber-600 rounded-2xl text-amber-700 font-medium hover:bg-amber-50 transition">
-      🛒 Longevity Market
-    </a>
-  </div>
+  <div className="flex flex-wrap gap-4 justify-center mt-10">
+  <a href="/vo2-estimator" className="inline-block px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-2xl transition">
+    📈 VO2 Max Estimator
+  </a>
+  <a href="/market" className="inline-block px-8 py-4 bg-amber-600 hover:bg-amber-700 text-white font-medium rounded-2xl transition">
+    🛒 Longevity Market
+  </a>
+</div>
 </div>
 
         {/* Top Ad */}
