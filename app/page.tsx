@@ -425,9 +425,6 @@ export default function LongevityDashboard() {
     <a href="https://x.com/longevityscore" target="_blank" className="text-gray-600 hover:text-black transition">
       <span className="text-2xl">𝕏</span> X
     </a>
-    <a href="https://tiktok.com/@longevityscore" target="_blank" className="text-gray-600 hover:text-black transition">
-      <span className="text-2xl">🎵</span> TikTok
-    </a>
   </div>
   <p className="text-center text-sm text-gray-500 mt-8">
     Follow for daily longevity tips and updates
