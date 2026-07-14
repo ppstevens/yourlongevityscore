@@ -87,10 +87,18 @@ export default function LongevityDashboard() {
 </div>
 </div>
 
-        {/* Top Ad */}
-        <div className="my-8 bg-gray-100 border border-dashed border-gray-300 rounded-2xl h-24 flex items-center justify-center text-gray-400 text-sm">
-          [728x90 Leaderboard Ad]
-        </div>
+        {/* Leaderboard Ad */}
+<div className="my-8">
+  <ins className="adsbygoogle"
+       style={{ display: "block" }}
+       data-ad-client="ca-pub-3402607606226196"
+       data-ad-slot="6611699868"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
 
         {!result ? (
           <div className="bg-white rounded-3xl shadow-2xl p-16">
@@ -173,6 +181,19 @@ export default function LongevityDashboard() {
       <p className="text-sm text-gray-500 mt-4">Your Biological Age</p>
     </div>
   </div>
+
+  {/* In-Content Ad Placement */}
+          <div className="my-10">
+            <ins className="adsbygoogle"
+                 style={{ display: "block" }}
+                 data-ad-client="ca-pub-3402607606226196"
+                 data-ad-slot="6420128175"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
 
   {/* Age Comparison Bar */}
   <div className="max-w-2xl mx-auto mb-16">
