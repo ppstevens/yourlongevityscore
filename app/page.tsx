@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 
 export default function LongevityDashboard() {
@@ -17,6 +17,7 @@ export default function LongevityDashboard() {
   const [loading, setLoading] = useState(false);
   const [animatedScores, setAnimatedScores] = useState({ sleep: 0, exercise: 0, nutrition: 0, biomarkers: 0 });
   const [shared, setShared] = useState(false);
+  const resultsRef = useRef<HTMLDivElement>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -56,36 +57,95 @@ export default function LongevityDashboard() {
     setTimeout(() => setShared(false), 2000);
   };
 
-  return (
-    <div className="min-h-screen bg-linear-to-br from-slate-50 via-white to-emerald-50 py-16 px-6">
-      <div className="max-w-5xl mx-auto">
-        {/* Updated Larger Header */}
-<div className="text-center mb-16">
-  <div className="flex justify-center mb-8">
-    <img 
-      src="/logo.jpg" 
-      alt="Your Longevity Score"
-      width="500"
-      height="250" 
-      className="h-48 md:h56 lg:h-64 w-auto"
-    />
-  </div>
-  
-  <p className="text-3xl md:text-4xl text-gray-600 font-medium">Know Your Score. Extend Your Life.</p>
-  
-  <p className="text-xl md:text-2xl text-gray-500 mt-6 max-w-3xl mx-auto leading-relaxed">
-    Discover your biological age and get personalized recommendations to optimize longevity, performance, and healthspan using science-backed metrics.
-  </p>
-  
-  <div className="flex flex-wrap gap-4 justify-center mt-10">
-  <a href="/vo2-estimator" className="inline-block px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-2xl transition">
-    📈 VO2 Max Estimator
-  </a>
-  <a href="/market" className="inline-block px-8 py-4 bg-amber-600 hover:bg-amber-700 text-white font-medium rounded-2xl transition">
-    🛒 Longevity Market
-  </a>
-</div>
-</div>
+  useEffect(() => {
+  if (result && resultsRef.current) {
+    resultsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}, [result]);
+
+ return (
+  <div className="min-h-screen bg-linear-to-br from-slate-50 via-white to-emerald-50 py-12 md:py-16 px-6">
+    <div className="max-w-5xl mx-auto">
+      
+      {/* Header + Logo */}
+      <div className="text-center mb-16">
+        <div className="flex justify-center mb-8">
+          <img 
+            src="/logo.jpg" 
+            alt="Your Longevity Score" 
+            width={500} 
+            height={250} 
+            className="h-40 md:h-48 lg:h-56 w-auto"
+          />
+        </div>
+        
+        <h1 className="text-5xl md:text-6xl font-bold tracking-tighter text-gray-900">
+          Longevity Score
+        </h1>
+        
+        <p className="text-2xl md:text-3xl text-gray-600 mt-4 font-medium">
+          Know Your Score. Extend Your Life.
+        </p>
+        
+        <p className="text-lg md:text-xl text-gray-500 mt-6 max-w-3xl mx-auto leading-relaxed">
+          Your chronological age is only part of the story. Your biological age — how well your body is actually aging — can be significantly younger or older depending on sleep, exercise, nutrition, VO2 Max, and other key biomarkers.
+        </p>
+      </div>
+
+      {/* Educational Content */}
+      <div className="max-w-4xl mx-auto mb-16 space-y-8">
+        <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border">
+          <h2 className="text-2xl font-semibold mb-4">What Is Biological Age?</h2>
+          <p className="text-gray-600 leading-relaxed">
+            Biological age reflects how old your body is functioning compared to your actual age. 
+            Factors such as cardiovascular fitness (VO2 Max), sleep quality, exercise consistency, 
+            resting heart rate, and nutrition quality all influence how quickly or slowly you age 
+            at the cellular level. Improving these areas can help lower your biological age and 
+            support longer healthspan.
+          </p>
+        </div>
+
+        <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border">
+          <h2 className="text-2xl font-semibold mb-4">How This Longevity Score Works</h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            This free tool calculates a personalized Longevity Score (0–100) and estimates your 
+            biological age based on the following inputs:
+          </p>
+          <ul className="list-disc list-inside text-gray-600 space-y-2">
+            <li>Age</li>
+            <li>Average sleep hours per night</li>
+            <li>Exercise frequency</li>
+            <li>Nutrition style</li>
+            <li>Estimated VO2 Max</li>
+            <li>Resting heart rate</li>
+          </ul>
+          <p className="text-gray-600 leading-relaxed mt-4">
+            The results include practical recommendations for exercise, nutrition, and 
+            evidence-based supplements, along with links to detailed plans and resources.
+          </p>
+        </div>
+
+        <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border">
+          <h2 className="text-2xl font-semibold mb-4">Why Track Longevity Metrics?</h2>
+          <p className="text-gray-600 leading-relaxed">
+            Research consistently shows that lifestyle factors have a major impact on how we age. 
+            Improving VO2 Max, maintaining consistent sleep, building muscle, and reducing chronic 
+            inflammation are among the strongest predictors of longer healthspan. This calculator 
+            is designed to give you a clear starting point and actionable next steps based on 
+            current science.
+          </p>
+        </div>
+      </div>
+
+      {/* Navigation Buttons */}
+      <div className="flex flex-wrap gap-4 justify-center mb-12">
+        <a href="/vo2-estimator" className="inline-block px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-2xl transition">
+          📈 VO2 Max Estimator
+        </a>
+        <a href="/market" className="inline-block px-8 py-4 bg-amber-600 hover:bg-amber-700 text-white font-medium rounded-2xl transition">
+          🛒 Longevity Market
+        </a>
+      </div>    
 
         {/* Leaderboard Ad */}
 <div className="my-8">
@@ -94,14 +154,12 @@ export default function LongevityDashboard() {
        data-ad-client="ca-pub-3402607606226196"
        data-ad-slot="6611699868"
        data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
+       data-full-width-responsive="true"
+       />
 </div>
 
         {!result ? (
-          <div className="bg-white rounded-3xl shadow-2xl p-16">
+          <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-16">
             <form onSubmit={handleSubmit} className="space-y-8">
   <div>
     <label className="block text-lg font-medium mb-3">Your Age</label>
@@ -152,7 +210,7 @@ export default function LongevityDashboard() {
 </form>
           </div>
         ) : (
-          <div className="bg-white rounded-3xl shadow-2xl p-16">
+          <div ref={resultsRef} className="bg-white rounded-3xl shadow-2xl p-8 md:p-16">
   {/* Two Circles Side by Side */}
   <div className="flex flex-col md:flex-row justify-center gap-12 mb-12">
     {/* Longevity Score Circle */}
@@ -189,10 +247,8 @@ export default function LongevityDashboard() {
                  data-ad-client="ca-pub-3402607606226196"
                  data-ad-slot="6420128175"
                  data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+                 data-full-width-responsive="true"
+                 />
           </div>
 
   {/* Age Comparison Bar */}
@@ -391,6 +447,52 @@ export default function LongevityDashboard() {
   <div className="text-sm text-gray-600 mt-1">Complete amino acid profile to support muscle maintenance, recovery, and longevity pathways → Shop on Market</div>
 </a>
   </div>
+
+  {/* Educational Content After Results */}
+  <div className="mt-20 max-w-4xl mx-auto space-y-10">
+  
+  <div className="bg-white rounded-3xl p-8 md:p-10 border">
+    <h2 className="text-2xl font-semibold mb-4">Understanding Your Longevity Score</h2>
+    <p className="text-gray-600 leading-relaxed">
+      Your Longevity Score (0–100) reflects the combined impact of sleep, exercise, nutrition, 
+      and key biomarkers such as VO2 Max and resting heart rate. Higher scores generally indicate 
+      better lifestyle habits associated with longer healthspan. This score is designed as an 
+      educational tool to help you identify areas for improvement.
+    </p>
+  </div>
+
+  <div className="bg-white rounded-3xl p-8 md:p-10 border">
+    <h2 className="text-2xl font-semibold mb-4">What Biological Age Means</h2>
+    <p className="text-gray-600 leading-relaxed">
+      Biological age estimates how old your body is functioning relative to your chronological age. 
+      A biological age lower than your actual age suggests that your current habits are supporting 
+      healthier aging. Research shows that consistent improvements in cardiovascular fitness, 
+      sleep quality, and body composition can positively influence biological aging markers over time.
+    </p>
+  </div>
+
+  <div className="bg-white rounded-3xl p-8 md:p-10 border">
+    <h2 className="text-2xl font-semibold mb-4">How to Improve Your Results</h2>
+    <ul className="list-disc list-inside text-gray-600 space-y-3">
+      <li><strong>Sleep:</strong> Aim for 7–9 hours of consistent, high-quality sleep each night.</li>
+      <li><strong>Exercise:</strong> Combine Zone 2 cardio with strength training 3–5 days per week.</li>
+      <li><strong>Nutrition:</strong> Prioritize protein, whole foods, and minimize ultra-processed options.</li>
+      <li><strong>VO2 Max:</strong> Regular aerobic training is one of the strongest predictors of longevity.</li>
+      <li><strong>Recovery:</strong> Manage stress and allow adequate recovery between training sessions.</li>
+    </ul>
+  </div>
+
+  <div className="bg-white rounded-3xl p-8 md:p-10 border">
+    <h2 className="text-2xl font-semibold mb-4">Important Notes</h2>
+    <p className="text-gray-600 leading-relaxed">
+      This tool provides general educational information only and is not a medical diagnosis or 
+      personalized medical advice. Always consult a qualified healthcare professional before making 
+      significant changes to your exercise, diet, or supplement routine, especially if you have 
+      existing health conditions.
+    </p>
+  </div>
+
+</div>
   <div className="mt-10 text-center">
   <a 
     href="/supplement-guide" 
@@ -401,9 +503,15 @@ export default function LongevityDashboard() {
 </div>
 </div>    
 
-      <button onClick={() => setResult(null)} className="mt-16 w-full py-6 border-2 border-gray-300 rounded-3xl hover:bg-gray-50 text-xl font-medium">
-              Start New Assessment
-            </button>
+      <button 
+  onClick={() => {
+    setResult(null);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }} 
+  className="mt-16 w-full py-6 border-2 border-gray-300 rounded-3xl hover:bg-gray-50 text-xl font-medium"
+>
+  Start New Assessment
+</button>
           </div>           
         )}
 
