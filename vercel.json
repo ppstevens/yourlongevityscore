@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "yourlongevityscore.com"
+        }
+      ],
+      "destination": "https://www.yourlongevityscore.com/:path*",
+      "permanent": true
+    }
+  ]
+}
