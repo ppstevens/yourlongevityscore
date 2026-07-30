@@ -80,11 +80,15 @@ export default function LongevityDashboard() {
         </div>
         
         <h1 className="text-5xl md:text-6xl font-bold tracking-tighter text-gray-900">
-          Longevity Score
+          Longevity Score Calculator
         </h1>
         
         <p className="text-2xl md:text-3xl text-gray-600 mt-4 font-medium">
           Know Your Score. Extend Your Life.
+        </p>
+
+        <p className="text-2xl md:text-3xl text-gray-600 mt-4 font-medium">
+          Free Biological Age & Longevity Score Assessment
         </p>
         
         <p className="text-lg md:text-xl text-gray-500 mt-6 max-w-3xl mx-auto leading-relaxed">
