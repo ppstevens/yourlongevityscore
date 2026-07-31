@@ -33,6 +33,7 @@ export default function RootLayout({
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3402607606226196"
           crossOrigin="anonymous"></script>
           <link rel="canonical" href="https://www.yourlongevityscore.com/" />
+       <script async src="https://tally.so/widgets/embed.js"></script>   
       </head>
       <body>{children}</body>
     </html>

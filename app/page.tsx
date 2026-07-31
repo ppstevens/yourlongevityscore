@@ -457,6 +457,29 @@ export default function LongevityDashboard() {
   <div className="text-sm text-gray-600 mt-1">Complete amino acid profile to support muscle maintenance, recovery, and longevity pathways → Shop on Market</div>
 </a>
   </div>
+  {/* Free PDF Opt-In - Tally Embed */}
+<div className="mt-16 max-w-2xl mx-auto bg-white border border-green-100 rounded-3xl p-8 md:p-10 shadow-sm">
+  <h3 className="text-2xl font-semibold mb-3 text-center">
+    Get the Free Daily Longevity Routine
+  </h3>
+  <p className="text-gray-600 mb-6 text-center">
+    Download <strong>Simple Daily Habits to Lower Biological Age</strong> — 
+    a practical guide for adults 50+.
+  </p>
+
+  <iframe 
+    data-tally-src="https://tally.so/embed/9qPALG?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
+    loading="lazy" 
+    width="100%" 
+    height="376" 
+    title="Free Longevity Routine PDF"
+    className="w-full border-0"
+  />
+  
+  <p className="text-xs text-gray-400 mt-4 text-center">
+    No spam. Unsubscribe anytime. PDF delivered instantly.
+  </p>
+</div>
 
   {/* Educational Content After Results */}
   <div className="mt-20 max-w-4xl mx-auto space-y-10">
@@ -580,7 +603,11 @@ export default function LongevityDashboard() {
     <a href="https://x.com/longevityscore" target="_blank" className="text-gray-600 hover:text-black transition">
       <span className="text-2xl">𝕏</span> X
     </a>
-  </div>
+    <a href="https://www.youtube.com/@YourLongevityScore" 
+    target="_blank" className="text-gray-600 hover:text-black transition">
+      <span className="text-2xl">▶️</span> YouTube
+  </a>
+</div>
   <p className="text-center text-sm text-gray-500 mt-8">
     Follow for daily longevity tips and updates
   </p>
