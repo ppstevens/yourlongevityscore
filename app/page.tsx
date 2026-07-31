@@ -149,6 +149,12 @@ export default function LongevityDashboard() {
         <a href="/market" className="inline-block px-8 py-4 bg-amber-600 hover:bg-amber-700 text-white font-medium rounded-2xl transition">
           🛒 Longevity Market
         </a>
+        <a href="/improve-biological-age" className="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-2xl transition">
+    📘 How to Improve Biological Age
+  </a>
+  <a href="/vo2-max-longevity" className="inline-block px-8 py-4 bg-teal-600 hover:bg-teal-700 text-white font-medium rounded-2xl transition">
+    ❤️ VO2 Max & Longevity
+  </a>
       </div>    
 
         {/* Leaderboard Ad */}
@@ -495,6 +501,22 @@ export default function LongevityDashboard() {
       existing health conditions.
     </p>
   </div>
+  <div className="mt-10 text-center">
+  <a 
+    href="/improve-biological-age" 
+    className="inline-block bg-blue-600 text-white px-10 py-4 rounded-2xl font-semibold hover:bg-blue-700 transition"
+  >
+    📘 How to Improve Your Biological Age
+  </a>
+</div>
+<div className="mt-6 text-center">
+  <a 
+    href="/vo2-max-longevity" 
+    className="inline-block bg-teal-600 text-white px-10 py-4 rounded-2xl font-semibold hover:bg-teal-700 transition"
+  >
+    ❤️ Learn About VO2 Max & Longevity
+  </a>
+</div>
 
 </div>
   <div className="mt-10 text-center">
