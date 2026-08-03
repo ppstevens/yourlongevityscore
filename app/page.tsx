@@ -457,27 +457,27 @@ export default function LongevityDashboard() {
   <div className="text-sm text-gray-600 mt-1">Complete amino acid profile to support muscle maintenance, recovery, and longevity pathways → Shop on Market</div>
 </a>
   </div>
-  {/* Free PDF Opt-In - Tally Embed */}
-<div className="mt-16 max-w-2xl mx-auto bg-white border border-green-100 rounded-3xl p-8 md:p-10 shadow-sm">
-  <h3 className="text-2xl font-semibold mb-3 text-center">
+  {/* Free PDF Opt-In */}
+<div className="mt-16 max-w-2xl mx-auto bg-white border border-green-100 rounded-3xl p-8 md:p-10 shadow-sm text-center">
+  <h3 className="text-2xl font-semibold mb-3">
     Get the Free Daily Longevity Routine
   </h3>
-  <p className="text-gray-600 mb-6 text-center">
+  <p className="text-gray-600 mb-6">
     Download <strong>Simple Daily Habits to Lower Biological Age</strong> — 
     a practical guide for adults 50+.
   </p>
 
-  <iframe 
-    data-tally-src="https://tally.so/embed/9qPALG?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
-    loading="lazy" 
-    width="100%" 
-    height="376" 
-    title="Free Longevity Routine PDF"
-    className="w-full border-0"
-  />
-  
-  <p className="text-xs text-gray-400 mt-4 text-center">
-    No spam. Unsubscribe anytime. PDF delivered instantly.
+  <a 
+    href="https://tally.so/r/9qPALG" 
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block bg-green-600 hover:bg-green-700 text-white px-10 py-4 rounded-2xl font-semibold transition"
+  >
+    Get the Free PDF
+  </a>
+
+  <p className="text-xs text-gray-400 mt-4">
+    Enter your email on the next screen. PDF delivered instantly.
   </p>
 </div>
 
