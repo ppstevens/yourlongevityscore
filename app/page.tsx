@@ -66,7 +66,7 @@ export default function LongevityDashboard() {
  return (
   <div className="min-h-screen bg-linear-to-br from-slate-50 via-white to-emerald-50 py-12 md:py-16 px-6">
     <div className="max-w-5xl mx-auto">
-      
+
       {/* Header + Logo */}
       <div className="text-center mb-16">
         <div className="flex justify-center mb-8">
@@ -95,66 +95,150 @@ export default function LongevityDashboard() {
           Your chronological age is only part of the story. Your biological age — how well your body is actually aging — can be significantly younger or older depending on sleep, exercise, nutrition, VO2 Max, and other key biomarkers.
         </p>
       </div>
+      
+      {/* Expanded Educational Content */}
+<div className="max-w-4xl mx-auto mb-16 space-y-8">
 
-      {/* Educational Content */}
-      <div className="max-w-4xl mx-auto mb-16 space-y-8">
-        <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border">
-          <h2 className="text-2xl font-semibold mb-4">What Is Biological Age?</h2>
-          <p className="text-gray-600 leading-relaxed">
-            Biological age reflects how old your body is functioning compared to your actual age. 
-            Factors such as cardiovascular fitness (VO2 Max), sleep quality, exercise consistency, 
-            resting heart rate, and nutrition quality all influence how quickly or slowly you age 
-            at the cellular level. Improving these areas can help lower your biological age and 
-            support longer healthspan.
-          </p>
-        </div>
+  <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border">
+    <h2 className="text-2xl font-semibold mb-4">
+      What Is a Longevity Score and Biological Age?
+    </h2>
+    <p className="text-gray-600 leading-relaxed mb-4">
+      Your chronological age is the number of years you have been alive. Your biological age reflects
+      how well your body is actually functioning. Two people who are both 55 can have very different
+      biological ages depending on sleep quality, fitness level, nutrition, stress, and recovery.
+    </p>
+    <p className="text-gray-600 leading-relaxed mb-4">
+      A <strong>longevity score</strong> combines key lifestyle and fitness markers into one simple
+      number so you can see where you stand and what to improve. This free biological age calculator
+      looks at sleep, exercise frequency, nutrition style, estimated VO2 Max, and resting heart rate
+      to give you a practical starting point.
+    </p>
+    <p className="text-gray-600 leading-relaxed">
+      The goal is not perfection. It is awareness. Small, consistent improvements in the areas that
+      matter most can help support a longer healthspan — more years lived with energy, strength, and independence.
+    </p>
+  </div>
 
-        <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border">
-          <h2 className="text-2xl font-semibold mb-4">How This Longevity Score Works</h2>
-          <p className="text-gray-600 leading-relaxed mb-4">
-            This free tool calculates a personalized Longevity Score (0–100) and estimates your 
-            biological age based on the following inputs:
-          </p>
-          <ul className="list-disc list-inside text-gray-600 space-y-2">
-            <li>Age</li>
-            <li>Average sleep hours per night</li>
-            <li>Exercise frequency</li>
-            <li>Nutrition style</li>
-            <li>Estimated VO2 Max</li>
-            <li>Resting heart rate</li>
-          </ul>
-          <p className="text-gray-600 leading-relaxed mt-4">
-            The results include practical recommendations for exercise, nutrition, and 
-            evidence-based supplements, along with links to detailed plans and resources.
-          </p>
-        </div>
+  <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border">
+    <h2 className="text-2xl font-semibold mb-4">
+      How This Free Biological Age Calculator Works
+    </h2>
+    <p className="text-gray-600 leading-relaxed mb-4">
+      This tool estimates your longevity score and biological age using inputs that research consistently
+      links to healthier aging:
+    </p>
+    <ul className="list-disc list-inside text-gray-600 space-y-2 mb-4">
+      <li>Your age</li>
+      <li>Average sleep hours per night</li>
+      <li>Exercise days per week</li>
+      <li>Nutrition style (high protein, balanced, keto, high carb, or high junk food)</li>
+      <li>Estimated VO2 Max (cardiovascular fitness)</li>
+      <li>Resting heart rate</li>
+    </ul>
+    <p className="text-gray-600 leading-relaxed mb-4">
+      After you submit your information, you receive a Longevity Score, an estimated biological age,
+      and practical recommendations for exercise, meals, and evidence-based supplements. You can also
+      explore detailed guides on improving VO2 Max, lowering biological age, and understanding longevity supplements.
+    </p>
+    <p className="text-gray-600 leading-relaxed">
+      This calculator is designed for educational purposes. It is not a medical diagnosis or a substitute
+      for professional healthcare advice.
+    </p>
+  </div>
 
-        <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border">
-          <h2 className="text-2xl font-semibold mb-4">Why Track Longevity Metrics?</h2>
-          <p className="text-gray-600 leading-relaxed">
-            Research consistently shows that lifestyle factors have a major impact on how we age. 
-            Improving VO2 Max, maintaining consistent sleep, building muscle, and reducing chronic 
-            inflammation are among the strongest predictors of longer healthspan. This calculator 
-            is designed to give you a clear starting point and actionable next steps based on 
-            current science.
-          </p>
-        </div>
-      </div>
+  <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border">
+    <h2 className="text-2xl font-semibold mb-4">
+      Why Improving Biological Age Matters After 50
+    </h2>
+    <p className="text-gray-600 leading-relaxed mb-4">
+      After age 50, lifestyle choices often have an even greater impact on how you feel and function.
+      Muscle mass, cardiovascular fitness, sleep quality, and recovery capacity all tend to decline if
+      they are not actively maintained. The good news is that these areas respond well to consistent habits.
+    </p>
+    <p className="text-gray-600 leading-relaxed mb-4">
+      Research links higher VO2 Max, regular strength training, adequate protein intake, and solid sleep
+      with better long-term health outcomes. Tracking a simple longevity score can help you stay focused
+      on the habits that matter most instead of getting lost in complicated programs.
+    </p>
+    <p className="text-gray-600 leading-relaxed">
+      Whether your current score is high or lower than you expected, the next step is the same: choose
+      one or two sustainable improvements and build from there.
+    </p>
+  </div>
+
+  <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border">
+    <h2 className="text-2xl font-semibold mb-4">
+      Key Areas That Influence Your Longevity Score
+    </h2>
+    <p className="text-gray-600 leading-relaxed mb-4">
+      <strong>Sleep:</strong> Consistent 7–9 hour nights support hormone balance, recovery, and cognitive health.
+      Poor or irregular sleep is one of the fastest ways to raise biological age markers.
+    </p>
+    <p className="text-gray-600 leading-relaxed mb-4">
+      <strong>Exercise:</strong> A mix of Zone 2 cardio and strength training helps preserve muscle, improve
+      VO2 Max, and support metabolic health. You do not need extreme workouts — you need regular stimulus.
+    </p>
+    <p className="text-gray-600 leading-relaxed mb-4">
+      <strong>Nutrition:</strong> Prioritizing protein and whole foods while limiting ultra-processed options
+      supports muscle maintenance and lower inflammation.
+    </p>
+    <p className="text-gray-600 leading-relaxed mb-4">
+      <strong>VO2 Max:</strong> Cardiovascular fitness is one of the strongest predictors of long-term health
+      and survival. Even moderate improvements can make a meaningful difference.
+    </p>
+    <p className="text-gray-600 leading-relaxed">
+      <strong>Resting heart rate:</strong> A lower resting heart rate (when appropriate for your fitness level)
+      often reflects better cardiovascular efficiency and recovery.
+    </p>
+  </div>
+
+  <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border">
+    <h2 className="text-2xl font-semibold mb-4">
+      How to Use Your Results
+    </h2>
+    <p className="text-gray-600 leading-relaxed mb-4">
+      After you calculate your score, review the category breakdown. Identify the lowest areas first.
+      For many people over 50, the biggest opportunities are sleep consistency, strength training frequency,
+      protein intake, and building an aerobic base through Zone 2 work.
+    </p>
+    <p className="text-gray-600 leading-relaxed mb-4">
+      Use the recommended exercise and meal guidance as a starting template, not a rigid plan. Adjust for
+      your schedule, preferences, and any guidance from your doctor. Re-test every 4–8 weeks to see whether
+      your habits are moving your score in the right direction.
+    </p>
+    <p className="text-gray-600 leading-relaxed">
+      For deeper guidance, explore our free articles on improving biological age, VO2 Max and longevity,
+      and evidence-based supplements. You can also download the free daily routine PDF for a simple
+      week-by-week framework.
+    </p>
+  </div>
+
+</div>
 
       {/* Navigation Buttons */}
       <div className="flex flex-wrap gap-4 justify-center mb-12">
         <a href="/vo2-estimator" className="inline-block px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-2xl transition">
           📈 VO2 Max Estimator
         </a>
-        <a href="/market" className="inline-block px-8 py-4 bg-amber-600 hover:bg-amber-700 text-white font-medium rounded-2xl transition">
-          🛒 Longevity Market
-        </a>
-        <a href="/improve-biological-age" className="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-2xl transition">
-    📘 How to Improve Biological Age
-  </a>
   <a href="/vo2-max-longevity" className="inline-block px-8 py-4 bg-teal-600 hover:bg-teal-700 text-white font-medium rounded-2xl transition">
     ❤️ VO2 Max & Longevity
   </a>
+  <a href="/improve-vo2-max-after-50" className="inline-block px-8 py-4 bg-teal-600 hover:bg-teal-700 text-white font-medium rounded-2xl transition">
+  📈 Improve VO2 Max After 50
+</a>
+        <a href="/improve-biological-age" className="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-2xl transition">
+    📘 How to Improve Biological Age
+  </a>
+<a href="/best-sleep-habits-biological-age" className="inline-block px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-2xl transition">
+  😴 Best Sleep Habits
+</a>
+<a href="/protein-muscle-longevity-after-50" className="inline-block px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white font-medium rounded-2xl transition">
+  💪 Protein & Muscle After 50
+</a>
+<a href="/market" className="inline-block px-8 py-4 bg-amber-600 hover:bg-amber-700 text-white font-medium rounded-2xl transition">
+          🛒 Longevity Market
+        </a>
       </div>    
 
         {/* Leaderboard Ad */}
@@ -457,6 +541,108 @@ export default function LongevityDashboard() {
   <div className="text-sm text-gray-600 mt-1">Complete amino acid profile to support muscle maintenance, recovery, and longevity pathways → Shop on Market</div>
 </a>
   </div>
+
+ {/* Expanded Results Educational Content */}
+<div className="mt-20 max-w-4xl mx-auto space-y-8">
+
+  <div className="bg-white rounded-3xl p-8 md:p-10 border">
+    <h2 className="text-2xl font-semibold mb-4">
+      Understanding Your Longevity Score Results
+    </h2>
+    <p className="text-gray-600 leading-relaxed mb-4">
+      Your Longevity Score (0–100) is a practical summary of how your current habits compare with
+      patterns linked to healthier aging. It is based on sleep, exercise frequency, nutrition style,
+      estimated VO2 Max, and resting heart rate. A higher score generally reflects stronger lifestyle
+      fundamentals. A lower score simply highlights the areas with the most room to improve.
+    </p>
+    <p className="text-gray-600 leading-relaxed">
+      This score is educational, not diagnostic. It is designed to give you a clear starting point and
+      help you focus on a few high-impact habits instead of trying to change everything at once.
+    </p>
+  </div>
+
+  <div className="bg-white rounded-3xl p-8 md:p-10 border">
+    <h2 className="text-2xl font-semibold mb-4">
+      What Your Biological Age Estimate Means
+    </h2>
+    <p className="text-gray-600 leading-relaxed mb-4">
+      Biological age is an estimate of how old your body may be functioning relative to your
+      chronological age. If your biological age is lower than your actual age, your current habits may
+      be supporting healthier aging. If it is higher, the result is still useful — it points to the
+      levers that can help reverse course over time.
+    </p>
+    <p className="text-gray-600 leading-relaxed">
+      Many people notice meaningful changes in how they feel within weeks of improving sleep,
+      increasing Zone 2 cardio, adding strength training, and raising daily protein. Reassess every
+      4–8 weeks to track direction, not perfection.
+    </p>
+  </div>
+
+  <div className="bg-white rounded-3xl p-8 md:p-10 border">
+    <h2 className="text-2xl font-semibold mb-4">
+      How to Improve Your Results After 50
+    </h2>
+    <p className="text-gray-600 leading-relaxed mb-4">
+      The most effective changes are usually simple and repeatable:
+    </p>
+    <ul className="list-disc list-inside text-gray-600 space-y-3 mb-4">
+      <li>
+        <strong>Sleep:</strong> Aim for 7–9 hours with a consistent schedule. Protect the hour before bed
+        by reducing screens and heavy meals.
+      </li>
+      <li>
+        <strong>Zone 2 cardio:</strong> Build an aerobic base with conversational-pace work 2–4 times per week.
+        This strongly supports VO2 Max and recovery.
+      </li>
+      <li>
+        <strong>Strength training:</strong> Train major muscle groups 2–3 times per week to help preserve
+        muscle, bone, and metabolic health.
+      </li>
+      <li>
+        <strong>Protein:</strong> Include a solid protein source at each meal to support muscle maintenance.
+      </li>
+      <li>
+        <strong>Recovery:</strong> Watch resting heart rate and HRV trends. Reduce alcohol and manage stress
+        to improve recovery capacity.
+      </li>
+    </ul>
+    <p className="text-gray-600 leading-relaxed">
+      Start with one or two changes you can sustain. Consistency compounds faster than intensity.
+    </p>
+  </div>
+
+  <div className="bg-white rounded-3xl p-8 md:p-10 border">
+    <h2 className="text-2xl font-semibold mb-4">
+      Using the Recommendations on This Page
+    </h2>
+    <p className="text-gray-600 leading-relaxed mb-4">
+      The exercise, meal, and supplement suggestions are starting templates based on your inputs.
+      They are meant to be practical, not rigid. Adjust them to your schedule, preferences, and any
+      guidance from your physician.
+    </p>
+    <p className="text-gray-600 leading-relaxed mb-4">
+      For deeper detail, use the linked exercise plans, recipe ideas, supplement guide, and educational
+      articles on biological age and VO2 Max. You can also download the free daily routine PDF for a
+      simple weekly framework.
+    </p>
+    <p className="text-gray-600 leading-relaxed">
+      Recalculate your score periodically as your habits improve. The most useful signal is steady
+      progress over months, not a single perfect day.
+    </p>
+  </div>
+
+  <div className="bg-white rounded-3xl p-8 md:p-10 border">
+    <h2 className="text-2xl font-semibold mb-4">
+      Important Notes
+    </h2>
+    <p className="text-gray-600 leading-relaxed">
+      This tool provides general educational information only. It is not medical advice, a diagnosis,
+      or a personalized treatment plan. Always consult a qualified healthcare professional before making
+      significant changes to exercise, diet, or supplements, especially if you have existing health
+      conditions or take medication.
+    </p>
+  </div>
+ 
   {/* Free PDF Opt-In */}
 <div className="mt-16 max-w-2xl mx-auto bg-white border border-green-100 rounded-3xl p-8 md:p-10 shadow-sm text-center">
   <h3 className="text-2xl font-semibold mb-3">
@@ -481,49 +667,6 @@ export default function LongevityDashboard() {
   </p>
 </div>
 
-  {/* Educational Content After Results */}
-  <div className="mt-20 max-w-4xl mx-auto space-y-10">
-  
-  <div className="bg-white rounded-3xl p-8 md:p-10 border">
-    <h2 className="text-2xl font-semibold mb-4">Understanding Your Longevity Score</h2>
-    <p className="text-gray-600 leading-relaxed">
-      Your Longevity Score (0–100) reflects the combined impact of sleep, exercise, nutrition, 
-      and key biomarkers such as VO2 Max and resting heart rate. Higher scores generally indicate 
-      better lifestyle habits associated with longer healthspan. This score is designed as an 
-      educational tool to help you identify areas for improvement.
-    </p>
-  </div>
-
-  <div className="bg-white rounded-3xl p-8 md:p-10 border">
-    <h2 className="text-2xl font-semibold mb-4">What Biological Age Means</h2>
-    <p className="text-gray-600 leading-relaxed">
-      Biological age estimates how old your body is functioning relative to your chronological age. 
-      A biological age lower than your actual age suggests that your current habits are supporting 
-      healthier aging. Research shows that consistent improvements in cardiovascular fitness, 
-      sleep quality, and body composition can positively influence biological aging markers over time.
-    </p>
-  </div>
-
-  <div className="bg-white rounded-3xl p-8 md:p-10 border">
-    <h2 className="text-2xl font-semibold mb-4">How to Improve Your Results</h2>
-    <ul className="list-disc list-inside text-gray-600 space-y-3">
-      <li><strong>Sleep:</strong> Aim for 7–9 hours of consistent, high-quality sleep each night.</li>
-      <li><strong>Exercise:</strong> Combine Zone 2 cardio with strength training 3–5 days per week.</li>
-      <li><strong>Nutrition:</strong> Prioritize protein, whole foods, and minimize ultra-processed options.</li>
-      <li><strong>VO2 Max:</strong> Regular aerobic training is one of the strongest predictors of longevity.</li>
-      <li><strong>Recovery:</strong> Manage stress and allow adequate recovery between training sessions.</li>
-    </ul>
-  </div>
-
-  <div className="bg-white rounded-3xl p-8 md:p-10 border">
-    <h2 className="text-2xl font-semibold mb-4">Important Notes</h2>
-    <p className="text-gray-600 leading-relaxed">
-      This tool provides general educational information only and is not a medical diagnosis or 
-      personalized medical advice. Always consult a qualified healthcare professional before making 
-      significant changes to your exercise, diet, or supplement routine, especially if you have 
-      existing health conditions.
-    </p>
-  </div>
   <div className="mt-10 text-center">
   <a 
     href="/improve-biological-age" 
@@ -540,9 +683,17 @@ export default function LongevityDashboard() {
     ❤️ Learn About VO2 Max & Longevity
   </a>
 </div>
-
 </div>
-  <div className="mt-10 text-center">
+
+<div className="mt-6 text-center">
+  <a 
+    href="/improve-vo2-max-after-50" 
+    className="inline-block bg-teal-600 text-white px-10 py-4 rounded-2xl font-semibold hover:bg-teal-700 transition"
+  >
+    📈 How to Improve VO2 Max After 50
+  </a>
+</div> 
+<div className="mt-10 text-center">
   <a 
     href="/supplement-guide" 
     className="inline-block bg-green-600 text-white px-10 py-4 rounded-2xl font-semibold hover:bg-green-700 transition"
@@ -550,7 +701,17 @@ export default function LongevityDashboard() {
     📖 The Science Behind the Supplements
   </a>
 </div>
-</div>    
+</div>
+<div className="mt-6 text-center">
+<a href="/best-sleep-habits-biological-age" className="inline-block bg-indigo-600 text-white px-10 py-4 rounded-2xl font-semibold hover:bg-indigo-700 transition">
+  😴 Best Sleep Habits to Lower Biological Age
+</a>
+</div> 
+<div className="mt-6 text-center">
+ <a href="/protein-muscle-longevity-after-50" className="inline-block bg-orange-600 text-white px-10 py-4 rounded-2xl font-semibold hover:bg-orange-700 transition">
+  💪 Protein, Muscle, and Longevity After 50
+</a>
+</div>
 
       <button 
   onClick={() => {
