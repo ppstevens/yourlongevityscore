@@ -122,7 +122,7 @@ export default function LongevityDashboard() {
 
   <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border">
     <h2 className="text-2xl font-semibold mb-4">
-      How This Free Biological Age Calculator Works
+      How This Free Longevity Score and Biological Age Calculator Works
     </h2>
     <p className="text-gray-600 leading-relaxed mb-4">
       This tool estimates your longevity score and biological age using inputs that research consistently
