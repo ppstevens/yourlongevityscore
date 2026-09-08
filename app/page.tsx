@@ -101,27 +101,6 @@ export default function LongevityDashboard() {
 
   <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border">
     <h2 className="text-2xl font-semibold mb-4">
-      What Is a Longevity Score and Biological Age?
-    </h2>
-    <p className="text-gray-600 leading-relaxed mb-4">
-      Your chronological age is the number of years you have been alive. Your biological age reflects
-      how well your body is actually functioning. Two people who are both 55 can have very different
-      biological ages depending on sleep quality, fitness level, nutrition, stress, and recovery.
-    </p>
-    <p className="text-gray-600 leading-relaxed mb-4">
-      A <strong>longevity score</strong> combines key lifestyle and fitness markers into one simple
-      number so you can see where you stand and what to improve. This free biological age calculator
-      looks at sleep, exercise frequency, nutrition style, estimated VO2 Max, and resting heart rate
-      to give you a practical starting point.
-    </p>
-    <p className="text-gray-600 leading-relaxed">
-      The goal is not perfection. It is awareness. Small, consistent improvements in the areas that
-      matter most can help support a longer healthspan — more years lived with energy, strength, and independence.
-    </p>
-  </div>
-
-  <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border">
-    <h2 className="text-2xl font-semibold mb-4">
       How This Free Longevity Score and Biological Age Calculator Works
     </h2>
     <p className="text-gray-600 leading-relaxed mb-4">
@@ -144,73 +123,6 @@ export default function LongevityDashboard() {
     <p className="text-gray-600 leading-relaxed">
       This calculator is designed for educational purposes. It is not a medical diagnosis or a substitute
       for professional healthcare advice.
-    </p>
-  </div>
-
-  <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border">
-    <h2 className="text-2xl font-semibold mb-4">
-      Why Improving Biological Age Matters After 50
-    </h2>
-    <p className="text-gray-600 leading-relaxed mb-4">
-      After age 50, lifestyle choices often have an even greater impact on how you feel and function.
-      Muscle mass, cardiovascular fitness, sleep quality, and recovery capacity all tend to decline if
-      they are not actively maintained. The good news is that these areas respond well to consistent habits.
-    </p>
-    <p className="text-gray-600 leading-relaxed mb-4">
-      Research links higher VO2 Max, regular strength training, adequate protein intake, and solid sleep
-      with better long-term health outcomes. Tracking a simple longevity score can help you stay focused
-      on the habits that matter most instead of getting lost in complicated programs.
-    </p>
-    <p className="text-gray-600 leading-relaxed">
-      Whether your current score is high or lower than you expected, the next step is the same: choose
-      one or two sustainable improvements and build from there.
-    </p>
-  </div>
-
-  <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border">
-    <h2 className="text-2xl font-semibold mb-4">
-      Key Areas That Influence Your Longevity Score
-    </h2>
-    <p className="text-gray-600 leading-relaxed mb-4">
-      <strong>Sleep:</strong> Consistent 7–9 hour nights support hormone balance, recovery, and cognitive health.
-      Poor or irregular sleep is one of the fastest ways to raise biological age markers.
-    </p>
-    <p className="text-gray-600 leading-relaxed mb-4">
-      <strong>Exercise:</strong> A mix of Zone 2 cardio and strength training helps preserve muscle, improve
-      VO2 Max, and support metabolic health. You do not need extreme workouts — you need regular stimulus.
-    </p>
-    <p className="text-gray-600 leading-relaxed mb-4">
-      <strong>Nutrition:</strong> Prioritizing protein and whole foods while limiting ultra-processed options
-      supports muscle maintenance and lower inflammation.
-    </p>
-    <p className="text-gray-600 leading-relaxed mb-4">
-      <strong>VO2 Max:</strong> Cardiovascular fitness is one of the strongest predictors of long-term health
-      and survival. Even moderate improvements can make a meaningful difference.
-    </p>
-    <p className="text-gray-600 leading-relaxed">
-      <strong>Resting heart rate:</strong> A lower resting heart rate (when appropriate for your fitness level)
-      often reflects better cardiovascular efficiency and recovery.
-    </p>
-  </div>
-
-  <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border">
-    <h2 className="text-2xl font-semibold mb-4">
-      How to Use Your Results
-    </h2>
-    <p className="text-gray-600 leading-relaxed mb-4">
-      After you calculate your score, review the category breakdown. Identify the lowest areas first.
-      For many people over 50, the biggest opportunities are sleep consistency, strength training frequency,
-      protein intake, and building an aerobic base through Zone 2 work.
-    </p>
-    <p className="text-gray-600 leading-relaxed mb-4">
-      Use the recommended exercise and meal guidance as a starting template, not a rigid plan. Adjust for
-      your schedule, preferences, and any guidance from your doctor. Re-test every 4–8 weeks to see whether
-      your habits are moving your score in the right direction.
-    </p>
-    <p className="text-gray-600 leading-relaxed">
-      For deeper guidance, explore our free articles on improving biological age, VO2 Max and longevity,
-      and evidence-based supplements. You can also download the free daily routine PDF for a simple
-      week-by-week framework.
     </p>
   </div>
 
@@ -575,39 +487,6 @@ export default function LongevityDashboard() {
       Many people notice meaningful changes in how they feel within weeks of improving sleep,
       increasing Zone 2 cardio, adding strength training, and raising daily protein. Reassess every
       4–8 weeks to track direction, not perfection.
-    </p>
-  </div>
-
-  <div className="bg-white rounded-3xl p-8 md:p-10 border">
-    <h2 className="text-2xl font-semibold mb-4">
-      How to Improve Your Results After 50
-    </h2>
-    <p className="text-gray-600 leading-relaxed mb-4">
-      The most effective changes are usually simple and repeatable:
-    </p>
-    <ul className="list-disc list-inside text-gray-600 space-y-3 mb-4">
-      <li>
-        <strong>Sleep:</strong> Aim for 7–9 hours with a consistent schedule. Protect the hour before bed
-        by reducing screens and heavy meals.
-      </li>
-      <li>
-        <strong>Zone 2 cardio:</strong> Build an aerobic base with conversational-pace work 2–4 times per week.
-        This strongly supports VO2 Max and recovery.
-      </li>
-      <li>
-        <strong>Strength training:</strong> Train major muscle groups 2–3 times per week to help preserve
-        muscle, bone, and metabolic health.
-      </li>
-      <li>
-        <strong>Protein:</strong> Include a solid protein source at each meal to support muscle maintenance.
-      </li>
-      <li>
-        <strong>Recovery:</strong> Watch resting heart rate and HRV trends. Reduce alcohol and manage stress
-        to improve recovery capacity.
-      </li>
-    </ul>
-    <p className="text-gray-600 leading-relaxed">
-      Start with one or two changes you can sustain. Consistency compounds faster than intensity.
     </p>
   </div>
 
