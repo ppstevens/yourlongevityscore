@@ -602,34 +602,7 @@ export default function LongevityDashboard() {
   Start New Assessment
 </button>
           </div>           
-        )}
-
-  {/* Learn More Section - Daily Fresh Content */}
-<div className="mt-20">
-  <h2 className="text-3xl font-semibold text-center mb-10">Daily Longevity Insights</h2>
-  <div className="grid md:grid-cols-4 gap-6">
-    <a href="/learn/tip" className="block p-8 bg-white rounded-3xl border hover:border-green-200 transition group">
-      <div className="text-emerald-600 text-sm font-medium mb-3">DAILY TIP</div>
-      <h3 className="font-semibold text-xl mb-3 group-hover:text-green-700">Today’s Longevity Tip</h3>
-      <p className="text-sm text-gray-600">Practical, science-backed advice updated daily.</p>
-    </a>
-    <a href="/learn/research" className="block p-8 bg-white rounded-3xl border hover:border-green-200 transition group">
-      <div className="text-emerald-600 text-sm font-medium mb-3">NEW RESEARCH</div>
-      <h3 className="font-semibold text-xl mb-3 group-hover:text-green-700">Latest Longevity Studies</h3>
-      <p className="text-sm text-gray-600">Key findings from PubMed &amp; major journals.</p>
-    </a>
-    <a href="/learn/supplement" className="block p-8 bg-white rounded-3xl border hover:border-green-200 transition group">
-      <div className="text-emerald-600 text-sm font-medium mb-3">SUPPLEMENT SPOTLIGHT</div>
-      <h3 className="font-semibold text-xl mb-3 group-hover:text-green-700">Best Evidence-Based Supplements</h3>
-      <p className="text-sm text-gray-600">What actually works in 2026.</p>
-    </a>
-    <a href="https://lifespan.io/aging-education" target="_blank" className="block p-8 bg-white rounded-3xl border hover:border-green-200 transition group">
-      <div className="text-emerald-600 text-sm font-medium mb-3">TOPICS</div>
-      <h3 className="font-semibold text-xl mb-3 group-hover:text-green-700">Longevity Topics</h3>
-      <p className="text-sm text-gray-600">Comprehensive guide to longevity topics from Lifespan.io</p>
-    </a>
-  </div>
-</div>     
+        )}    
 
 {/* Social Media Links */}
 <div className="mt-20 border-t border-gray-100 pt-12">
