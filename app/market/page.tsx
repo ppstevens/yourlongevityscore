@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.yourlongevityscore.com/market",
   },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function MarketPage() {
