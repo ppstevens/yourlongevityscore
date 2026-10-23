@@ -95,6 +95,33 @@ export default function LongevityDashboard() {
           Your chronological age is only part of the story. Your biological age — how well your body is actually aging — can be significantly younger or older depending on sleep, exercise, nutrition, VO2 Max, and other key biomarkers.
         </p>
       </div>
+      {/* Navigation Buttons */}
+      <div className="flex flex-wrap gap-4 justify-center mb-12">
+        <a href="/about" className="inline-block px-8 py-4 bg-slate-700 hover:bg-slate-800 text-white font-medium rounded-2xl transition">
+    About
+  </a>
+<a href="/vo2-estimator" className="inline-block px-8 py-4 bg-emerald-600 hover:bg-emerald-700 texwhitet- font-medium rounded-2xl transition">
+          📈 VO2 Max Estimator
+        </a>
+  <a href="/vo2-max-longevity" className="inline-block px-8 py-4 bg-teal-600 hover:bg-teal-700 text-white font-medium rounded-2xl transition">
+    ❤️ VO2 Max & Longevity
+  </a>
+  <a href="/improve-vo2-max-after-50" className="inline-block px-8 py-4 bg-teal-600 hover:bg-teal-700 text-white font-medium rounded-2xl transition">
+  📈 Improve VO2 Max After 50
+</a>
+        <a href="/improve-biological-age" className="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-2xl transition">
+    📘 How to Improve Biological Age
+  </a>
+<a href="/best-sleep-habits-biological-age" className="inline-block px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-2xl transition">
+  😴 Best Sleep Habits
+</a>
+<a href="/protein-muscle-longevity-after-50" className="inline-block px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white font-medium rounded-2xl transition">
+  💪 Protein & Muscle After 50
+</a>
+<a href="/market" className="inline-block px-8 py-4 bg-amber-600 hover:bg-amber-700 text-white font-medium rounded-2xl transition">
+          🛒 Longevity Market
+        </a>
+      </div>  
       
       {/* Expanded Educational Content */}
 <div className="max-w-4xl mx-auto mb-16 space-y-8">
@@ -126,32 +153,7 @@ export default function LongevityDashboard() {
     </p>
   </div>
 
-</div>
-
-      {/* Navigation Buttons */}
-      <div className="flex flex-wrap gap-4 justify-center mb-12">
-        <a href="/vo2-estimator" className="inline-block px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-2xl transition">
-          📈 VO2 Max Estimator
-        </a>
-  <a href="/vo2-max-longevity" className="inline-block px-8 py-4 bg-teal-600 hover:bg-teal-700 text-white font-medium rounded-2xl transition">
-    ❤️ VO2 Max & Longevity
-  </a>
-  <a href="/improve-vo2-max-after-50" className="inline-block px-8 py-4 bg-teal-600 hover:bg-teal-700 text-white font-medium rounded-2xl transition">
-  📈 Improve VO2 Max After 50
-</a>
-        <a href="/improve-biological-age" className="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-2xl transition">
-    📘 How to Improve Biological Age
-  </a>
-<a href="/best-sleep-habits-biological-age" className="inline-block px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-2xl transition">
-  😴 Best Sleep Habits
-</a>
-<a href="/protein-muscle-longevity-after-50" className="inline-block px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white font-medium rounded-2xl transition">
-  💪 Protein & Muscle After 50
-</a>
-<a href="/market" className="inline-block px-8 py-4 bg-amber-600 hover:bg-amber-700 text-white font-medium rounded-2xl transition">
-          🛒 Longevity Market
-        </a>
-      </div>    
+</div>  
 
         {/* Leaderboard Ad */}
 <div className="my-8">
