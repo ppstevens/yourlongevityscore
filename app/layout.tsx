@@ -12,12 +12,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "Longevity Score Calculator | Free Biological Age Test",
-  description: "Calculate your biological age and longevity score for free. Get personalized recommendations based on sleep, exercise, nutrition, VO2 Max, and resting heart rate.",
-  alternates: {
-    canonical: "https://www.yourlongevityscore.com/",
+export const metadata: Metadata = {
+  title: {
+    default: "Longevity Score Calculator | Free Biological Age Test",
+    template: "%s | Your Longevity Score",
   },
+  description: "Calculate your biological age and longevity score for free. Get personalized recommendations based on sleep, exercise, nutrition, VO2 Max, and resting heart rate.",
 };
 
 export default function RootLayout({
@@ -26,16 +26,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en">
+    <html lang="en">
       <head>
         {/* Google AdSense Script */}
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3402607606226196"
-          crossOrigin="anonymous"></script>
-          <link rel="canonical" href="https://www.yourlongevityscore.com/" />
-       <script async src="https://tally.so/widgets/embed.js"></script>   
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3402607606226196"
+          crossOrigin="anonymous"
+        ></script>
+        <script async src="https://tally.so/widgets/embed.js"></script>
       </head>
-      <body>{children}</body>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }
